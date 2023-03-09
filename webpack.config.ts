@@ -1,11 +1,11 @@
 import webpack from 'webpack';
 import { buildWebpackConfig } from './config/build/buildWebPackConfig';
-import { BuildPaths, BuilEnv } from './config/build/types/config';
+import { BuildPaths, BuildEnv } from './config/build/types/config';
 import path from 'path';
 
 
 
-export default (env: BuilEnv) => {
+export default (env: BuildEnv) => {
 
   const paths: BuildPaths = {
     entry: path.resolve(__dirname, 'src', 'index.tsx'),
